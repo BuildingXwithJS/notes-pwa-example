@@ -48,10 +48,8 @@ export default class HomePage extends React.Component {
       .then(async newNote => {
         const {rows: allDocs} = await db.allDocs({include_docs: true});
         if (allDocs.length > 0) {
-          console.log('saving docs:', allDocs);
           await Promise.all(
             allDocs.map(async ({doc}) => {
-              console.log('saving:', doc);
               const noteToSave = {...doc};
               delete noteToSave._id;
               delete noteToSave._rev;
@@ -63,7 +61,6 @@ export default class HomePage extends React.Component {
         return newNote;
       })
       .catch(async e => {
-        console.error(e);
         await db.put({_id: String(this.state.notes.length + 1), ...note});
         return note;
       });

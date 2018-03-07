@@ -1,0 +1,16 @@
+{
+  "name": "Note PWA Example",
+  "short_name": "Note PWA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f0f0",
+  "theme_color": "#ff6600",
+  "description": "A simple Notes PWA.",
+  "icons": [
+    {
+      "src": "/static/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
