@@ -2,7 +2,7 @@
 
 > Free open-source tutorial on building simple PWA
 
-This repository contains code and related materials for [Building simple PWA with Service Workers]() video.
+This repository contains code and related materials for [Building simple PWA with Service Workers](https://youtu.be/ncnRqh7Mr6w) video.
 
 ## Project description
 
